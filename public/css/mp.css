@@ -1,0 +1,285 @@
+/**** for all mp page ****/
+main{
+    width: 67%;
+    height: 100%;
+    margin: 0 auto;
+}
+.title{
+    border-bottom: 3px solid #989898;
+}
+.title h1,img,h2{
+    display: block;
+}
+/**** mypage.html ****/
+.menu-wrapper{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    width: 960px;
+    margin: 0 auto;
+}
+.menu{
+    width: 480px;
+    height: 472px;
+    float: left;
+}
+.background-1{
+    background-image: url("../image/bg_mypage_profile.png");
+}
+.background-2{
+    background-image: url("../image/bg_mypage_participatee.png");
+}
+.background-3{
+    background-image: url("../image/bg_mypage_saved.png");
+}
+.background-4{
+    background-image: url("../image/bg_mypage_log.png");
+}
+.menuicon-container{
+    margin-top: 45px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.menuicon-container span{
+    display: table-cell;
+    text-align: center;
+}
+.img-menuIcon{
+    margin: 0 auto;
+}
+.btn-to-menu{
+
+}
+.menu-info{
+    position: relative;
+    top: 0;
+    margin-top: 28px;
+}
+.info-kor{
+    font-size: 36px;
+}
+.info-en{
+    margin-top: 15px;
+    font-size: 18px;
+}
+a{
+    color: white;
+}
+/**** mp-setting ****/
+#setting-form{
+    margin-top: 55px;
+    width: 100%;
+}
+.input-area-wrapper{
+    width: 70%;
+}
+.form-submit{
+    margin-top: 70px;
+    width: 100%;
+    height: 47px;
+}
+.form-label{
+    float: left;
+    text-align: right;
+    margin-right: 25px;
+}
+.form-label > p{
+    height: 48px;
+    line-height: 48px;
+    margin: 0px 0px 24px 0px;
+}
+label{
+    height: 48px;
+}
+.input-wide{
+    width: 357px;
+    height: 46px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    margin: 12px 0px 12px 0px;
+    padding: 0px 0px 0px 12px;
+}
+.input-short{
+    height: 46px;
+    width: 206px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    margin: 12px 0px 12px 0px;
+    padding: 0px 0px 0px 12px;
+}
+#setting-file{
+    width: 347px;
+    height: 48px;
+    margin: 12px 0px 12px 0px;
+}
+.login-form-input{
+    text-align: center;
+}
+.btn-form{
+    margin-left: 11px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 137px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 6px;
+}
+.btn-submit{
+    background-color: #737373;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 137px;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 60px;
+    border:none;
+    border-radius: 6px;
+}
+.btn-submit:hover{
+    cursor : pointer;
+}
+.btn-cancel{
+    background-color: #ef5350;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    display: inline-block;
+    width: 137px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 6px;
+    margin-right: 14px;
+}
+/** mp_save **/
+.library-container{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.library{
+    display: block;
+    margin: 0 auto;
+    padding:36px 0 36px 0;
+    width: 90%;
+    height: 1101px;
+    background-image: url("../image/bg_social_checkjang.png"); /*DIRECTORY CAUTION*/
+    background-size:100% 273px;
+    overflow: hidden;
+}
+.library-row{
+    display: block;
+    width: 100%;
+    height: 260px;
+    margin-bottom: 77px;
+}
+.library-book-wrapper{
+    text-align: center;
+    float: left;
+    margin-right: 5%;
+    width: 20%;
+}
+.book-babchim{
+    margin: 0 auto;
+    width: 171px;
+    height: 17px;
+    background-image: url("../image/bg_main_babchim.png");
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.book-img{
+    margin: 0 auto;
+    width: 121px;
+    height:179px;
+}
+.part-save-main-wrapper{
+    width: 70%;
+    height: 100%;
+    margin: 50px auto 0 auto;
+}
+.menu-img{
+    float: right;
+    cursor: pointer;
+}
+.title-side-menu{
+    float: right;
+    width: 312px;
+    height: 44px;
+}
+/** mp_participate**/
+.menu-upper{
+    width: 90%;
+    height: 43px;
+    margin:0 auto;
+}
+.menu-upper-option{
+    color: white;
+    text-align: center;
+    float: right;
+    width: 155px;
+    height: 43px;
+    line-height: 43px;
+    cursor: pointer;
+}
+.profile-setting{
+    width: 80%;
+    height: 300px; /*TODO:임시 크기*/
+    margin: 0 auto;
+}
+#profile-img-wrapper {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+#profile-img{
+    width: 175px;
+    height: 175px;
+    border-radius: 175px;
+}
+#profile-wrapper{
+    float: left;
+}
+#profile-wrapper-info{
+    width: 275px;
+    border-bottom: 1px solid #989898;
+    color: #535353;
+    margin-bottom: 20px;
+}
+.btn-change{
+    width: 127px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    background-color: #737373;
+    border-radius: 48px;
+}
+#profile-img-change{
+    color: white;!important;
+}
+#book-cover{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/** mp_activity **/
+.activity-label{
+    float: left;
+}
+.activity-label > p{
+    text-align: right;
+}
+.activity-data{
+    margin-left: 10px;
+    float: left;
+}

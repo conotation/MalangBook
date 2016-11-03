@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="theme-color" content="#989898"/>
+    <title>Editor</title>
+    <!--웹스톰쓰신다면 href="/css/asdf.css"로-->
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/editor.css"/>
+    <script src="js/tinymce.min.js"></script>
+    <script>tinymce.init({ selector:'textarea', width : '100%',height : 640});</script>
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <div class="logo-wrapper">
+            <a href="main.html"><img src="image/logo_malangbook.png" alt="main-logo"></a>
+        </div>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <form method="GET" id="search">
+                    <input type="image" src="image/ic_main_search.png" name="Submit" value="Submit" id="search-icon" alt="search">
+                    <input type="search" name="search" placeholder="책 검색" id="search-input">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="nav-wrapper">
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a href="main.html" style="color: white">홈</a>
+            </li>
+            <li class="nav-li">
+                <a style="color: white">소설</a>
+                <ul>
+                    <li class="sub-menu-li">SF</li>
+                    <li class="sub-menu-li">미스터리</li>
+                    <li class="sub-menu-li">판타지</li>
+                    <li class="sub-menu-li">시리어스</li>
+                    <li class="sub-menu-li">코믹</li>
+                    <li class="sub-menu-li">순애, 로맨스</li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a style="color: white">동화</a>
+                <ul>
+                    <li class="sub-menu-li">동양권</li>
+                    <li class="sub-menu-li">서양권</li>
+                    <li class="sub-menu-li">한국 전래</li>
+                    <li class="sub-menu-li">자작</li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a style="color: white">시</a>
+                <ul>
+                    <li class="sub-menu-li">자유 시</li>
+                    <li class="sub-menu-li">정형 시</li>
+                    <li class="sub-menu-li">산문 시</li>
+                    <li class="sub-menu-li">서정 시</li>
+                    <li class="sub-menu-li">서사 시</li>
+                    <li class="sub-menu-li">극 시</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="content-wrapper">
+        <div class="book">
+            <form id="editor" action="" onsubmit="editorSubmit()" method="POST">
+                <input type="text" name="" placeholder="제목" class="editor-title" disabled><br>
+                <div class="editor-main">
+                    <textarea form="editor" name="" placeholder="여기에다 입력해주세요..." ></textarea><br>
+                </div>
+                <div style ="display: block;">
+                    <div style="float: right;"><input type="submit" value="확인" class="btn-submit" style="font-size: 18px;"></div>
+                    <div style="float: right; font-size: 18px;" class="btn-cancel">취소</div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>
+<footer>
+    <p>footer</p>
+</footer>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="js/editor.js"></script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "malang",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "~1.14.2",
+    "ejs": "~2.4.1",
+    "express": "~4.13.1",
+    "express-session": "~1.13.0",
+    "mariasql": "~0.2.6",
+    "multer": "^1.2.0",
+    "querystring": "^0.2.0"
+  }
+}

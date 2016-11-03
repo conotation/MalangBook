@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="css/footer.css"/>
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <div class="header-wrapper">
+        <div class="logo-wrapper">
+            <a href="main.html"><img src="image/logo_malangbook.png" alt="main-logo"></a>
+        </div>
+        <div class="search-container">
+            <div class="search-wrapper">
+                <form method="GET" id="search">
+                    <input type="image" src="image/ic_main_search.png" name="Submit" value="Submit" id="search-icon" alt="search">
+                    <input type="search" name="search" placeholder="책 검색" id="search-input">
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+<nav>
+    <div class="nav-wrapper">
+        <ul class="nav-ul">
+            <li class="nav-li">
+                <a href="main.html" style="color: white">홈</a>
+            </li>
+            <li class="nav-li">
+                <a style="color: white">소설</a>
+                <ul>
+                    <li class="sub-menu-li">SF</li>
+                    <li class="sub-menu-li">미스터리</li>
+                    <li class="sub-menu-li">판타지</li>
+                    <li class="sub-menu-li">시리어스</li>
+                    <li class="sub-menu-li">코믹</li>
+                    <li class="sub-menu-li">순애, 로맨스</li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a style="color: white">동화</a>
+                <ul>
+                    <li class="sub-menu-li">동양권</li>
+                    <li class="sub-menu-li">서양권</li>
+                    <li class="sub-menu-li">한국 전래</li>
+                    <li class="sub-menu-li">자작</li>
+                </ul>
+            </li>
+            <li class="nav-li">
+                <a style="color: white">시</a>
+                <ul>
+                    <li class="sub-menu-li">자유 시</li>
+                    <li class="sub-menu-li">정형 시</li>
+                    <li class="sub-menu-li">산문 시</li>
+                    <li class="sub-menu-li">서정 시</li>
+                    <li class="sub-menu-li">서사 시</li>
+                    <li class="sub-menu-li">극 시</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</nav>
+<main>
+    <div class="content-wrapper" >
+        <p id="make-form-title">책 편찬하기</p>
+        <form action="" method="POST" id="book-form">
+            <div>
+                <p><label for="category">분류</label></p>
+                <input id="category" name="category">
+            </div>
+            <div>
+                <p><label for="page-limit">페이지 제한</label></p>
+                <input type="number" id="page-limit" name="page-limit" value="0">
+            </div>
+            <div>
+                <p><label for="chapter-limit">단원 제한</label></p>
+                <input type="number" id="chapter-limit" name="chapter-limit" value="0">
+            </div>
+            <div>
+                <p><label for="overlap">중복 참여 가능 여부</label></p>
+                <select form="book-form" name="overlap" id="overlap">
+                    <option value="yes">예</option>
+                    <option value="no" selected="selected">아니오</option>
+                </select>
+            </div>
+            <div>
+                <p><label for="series">시리즈 여부</label></p>
+                <select form="book-form" name="series" id="series">
+                    <option value="yes">예</option>
+                    <option value="no" selected="selected">아니오</option>
+                </select>
+            </div>
+            <div>
+                <p><label for="private">비공개 여부</label></p>
+                <select form="book-form" name="private" id="private">
+                    <option value="yes">예</option>
+                    <option value="no" selected="selected">아니오</option>
+                </select>
+            </div>
+            <div>
+                <p>우클릭 설정</p>
+                <input class="radio-input" type="radio" id="right-click-accept" name="right-click" value="accept" checked="checked">
+                <div class="radio-label"><label for="right-click-accept">허용</label></div>
+                <input class="radio-input" type="radio" id="right-click-deny" name="right-click" value="deny">
+                <div class="radio-label"><label for="right-click-deny">비허용</label></div>
+            </div>
+            <div>
+                <p>공유 설정</p>
+                <input class="radio-input" type="radio" id="share-accept" name="share" class="share" value="accept" checked="checked">
+                <div class="radio-label"><label for="share-accept">허용</label></div>
+                <input class="radio-input" type="radio" id="share-deny" name="share" class="share" value="deny">
+                <div class="radio-label"><label for="share-deny">비허용</label></div>
+            </div>
+            <div>
+                <p>&lt;관리자&gt;다른사람이 쓴 글 수정</p>
+                <input class="radio-input" type="radio" id="modify-accept" name="modify" value="accept" checked="checked">
+                <div class="radio-label"><label for="modify-accept">허용</label></div>
+                <input class="radio-input" type="radio" id="modify-deny" name="modify" value="deny">
+                <div class="radio-label"><label for="modify-deny">비허용</label></div>
+            </div>
+            <div>
+                <p>&lt;관리자&gt;다른사람이 쓴 글 삭제</p>
+                <input class="radio-input" type="radio" id="delete-accept" name="delete" value="accept" checked="checked">
+                <div class="radio-label"><label for="delete-accept">허용</label></div>
+                <input class="radio-input" type="radio" id="delete-deny" name="delete" value="deny">
+                <div class="radio-label"><label for="delete-deny">비허용</label></div>
+            </div>
+
+            <div>
+                <p><label for="font">글꼴 지정</label></p>
+                <select form="book-form" name="font" id="font">
+                    <option value="type1">타입1</option>
+                    <option value="type2">타입2</option>
+                </select>
+            </div>
+            <div style="display: block;">
+                <div style="float: right;"><input type="submit" value="확인" class="btn-submit" style="font-size: 18px;"></div>
+                <div style="float: right; font-size: 18px;" class="btn-cancel">취소</div>
+            </div>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>footer</p>
+</footer>
+    </body>
+</html>

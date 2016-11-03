@@ -1,0 +1,96 @@
+label{
+    color: #8d8d8d;
+    font-size: 24px;
+}
+.login{
+    display: inline-block;
+    width: 950px;
+}
+.login-input{
+    color: #8d8d8d;
+    width: 357px;
+    height: 48px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    font-size: 24px;
+    padding-left: 12px;
+    margin: 12px 0px 12px 0px;
+}
+.signup-input{
+    color: #939393;
+    width: 357px;
+    height: 48px;
+    border: 1px solid #989898;
+    border-radius: 6px;
+    font-size: 14px;
+    padding-left: 12px;
+    margin: 12px 0px 12px 0px;
+}
+.login-facebook{
+    width: 100%;
+    line-height: 48px;
+}
+.login-nav{
+    display: inline-block;
+    height: 90px;
+    margin-bottom: 40px;
+}
+.login-nav-ul{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    list-style: none;
+    overflow: hidden;
+}
+.login-nav-li{
+    background-color: #989898;
+    text-align: center;
+    float: left;
+    width: 213px;
+    height: 90px;
+    line-height: 90px;
+    border-left: solid 2px #939393;
+    color: white;
+}
+.login-nav-li{
+    cursor: pointer;
+}
+.login-nav-cancel{
+    float: left;
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    line-height: 105px;
+    background-color: #ef5350;
+    cursor: pointer;
+}
+.login-nav-p{
+    margin: 0;
+    font-size: 24px;
+}
+.login-content{
+    display: inline-block;
+    width: 950px;
+    text-align: center;
+}
+.login-form{
+    width: 70%;
+    margin: 0 auto;
+}
+.login-form-label{
+    text-align: right;
+    float: left;
+}
+.login-form-label > p{
+    padding: 12px 0px 12px 0px;
+}
+.login-form-select{
+    color: #939393;
+    height: 48px;
+    width: 371px;
+    margin: 12px 0px 12px 0px;
+}
+#signup-title{
+    font-size: 30pt;
+    color: #535353;
+}
