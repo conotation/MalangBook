@@ -14,16 +14,16 @@ var randomString = require('randomstring');
 
 var connection = mysql.createConnection({
     host : 'localhost',
-    user : 'root',
+    user : 'prec',
     password : 'connotation',
-    database:'sunrin'
+    database:'malangbook'
 });
 
 app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
-var server = app.listen(52222, function(){
+var server = app.listen(8001, function(){
     console.log("Server Run");
 });
 
